@@ -1,0 +1,266 @@
+<button type="button" class="bot btn btn-primary fs-4 p-3 mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal"
+    style="border-radius:40px;">
+    Book Your Tickets Now <br>
+    <p class="fs-6">{{20-alreadybooked.length}} Seats left</p>
+</button>
+
+
+
+<div class="modal" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Book Ticket</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="seats container mt-5 " style="background-color: rgb(216, 212, 208);">
+
+                    <div class="driver">
+
+
+                        <div class="seat">D</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat">
+                            <input type="checkbox" id="one" [disabled]="alreadybooked.includes(1)" (click)="book(1)">
+                            <label for="one" id="one">1</label>
+                        </div>
+
+
+                        <div class="seat">
+                            <input type="checkbox" id="two" [disabled]="alreadybooked.includes(2)" (click)="book(2)">
+                            <label for="two" id="two">2</label>
+                        </div>
+
+                        <br><br>
+                        <div class="seat">
+                            <input type="checkbox" id="three" [disabled]="alreadybooked.includes(3)" (click)="book(3)">
+                            <label for="three" id="three">3</label>
+                        </div>
+
+                        <div class="seat">
+                            <input type="checkbox" id="four" [disabled]="alreadybooked.includes(4)" (click)="book(4)">
+                            <label for="four" id="four">4</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="seat">
+                            <input type="checkbox" id="five" [disabled]="alreadybooked.includes(5)" (click)="book(5)">
+                            <label for="five" id="five">5</label>
+                        </div>
+
+
+                        <div class="seat">
+                            <input type="checkbox" id="six" [disabled]="alreadybooked.includes(6)" (click)="book(6)">
+                            <label for="six" id="six">6</label>
+                        </div>
+
+                        <br><br>
+                        <div class="seat">
+                            <input type="checkbox" id="seven" [disabled]="alreadybooked.includes(7)" (click)="book(7)">
+                            <label for="seven" id="seven">7</label>
+                        </div>
+
+                        <div class="seat">
+                            <input type="checkbox" id="eight" [disabled]="alreadybooked.includes(8)" (click)="book(8)">
+                            <label for="eight" id="eight">8</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="seat">
+                            <input type="checkbox" id="nine" [disabled]="alreadybooked.includes(9)" (click)="book(9)">
+                            <label for="nine" id="nine">9</label>
+                        </div>
+
+
+                        <div class="seat">
+                            <input type="checkbox" id="ten" [disabled]="alreadybooked.includes(10)" (click)="book(10)">
+                            <label for="ten" id="ten">10</label>
+                        </div>
+
+                        <br><br>
+                        <div class="seat">
+                            <input type="checkbox" id="eleven" [disabled]="alreadybooked.includes(11)"
+                                (click)="book(11)">
+                            <label for="eleven" id="eleven">11</label>
+                        </div>
+
+                        <div class="seat">
+                            <input type="checkbox" id="twelve" [disabled]="alreadybooked.includes(12)"
+                                (click)="book(12)">
+                            <label for="twelve" id="twelve">12</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="seat">
+                            <input type="checkbox" id="thirteen" [disabled]="alreadybooked.includes(13)"
+                                (click)="book(13)">
+                            <label for="thirteen" id="thirteen">13</label>
+                        </div>
+
+
+                        <div class="seat">
+                            <input type="checkbox" id="fourteen" [disabled]="alreadybooked.includes(14)"
+                                (click)="book(14)">
+                            <label for="fourteen" id="fourteen">14</label>
+                        </div>
+
+                        <br><br>
+                        <div class="seat">
+                            <input type="checkbox" id="fifteen" [disabled]="alreadybooked.includes(15)"
+                                (click)="book(15)">
+                            <label for="fifteen" id="fifteen">15</label>
+                        </div>
+
+                        <div class="seat">
+                            <input type="checkbox" id="sixteen" [disabled]="alreadybooked.includes(16)"
+                                (click)="book(16)">
+                            <label for="sixteen" id="sixteen">16</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="seat">
+                            <input type="checkbox" id="seventeen" [disabled]="alreadybooked.includes(17)"
+                                (click)="book(17)">
+                            <label for="seventeen" id="seventeen">17</label>
+                        </div>
+
+
+                        <div class="seat">
+                            <input type="checkbox" id="eighteen" [disabled]="alreadybooked.includes(18)"
+                                (click)="book(18)">
+                            <label for="eighteen" id="eighteen">18</label>
+                        </div>
+
+                        <br><br>
+                        <div class="seat">
+                            <input type="checkbox" id="nineteen" [disabled]="alreadybooked.includes(19)"
+                                (click)="book(19)">
+                            <label for="nineteen" id="nineteen">19</label>
+                        </div>
+
+                        <div class="seat">
+                            <input type="checkbox" id="twenty" [disabled]="alreadybooked.includes(20)"
+                                (click)="book(20)">
+                            <label for="twenty" id="twenty">20</label>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <br><br>
+
+                <input type="text"  placeholder="name" class="w-100" #name style="text-transform: capitalize;" >
+                <br>
+                <br>
+                <input type="number"  placeholder="phone number" class="w-100" style="text-transform: capitalize;"  #phone> <br><br>
+
+                <span>Ticket Fare : TCR - EKM : ₹ 100 <br>
+                    Ticket Fare : TCR - KLM : ₹ 200 <br>
+                    Ticket Fare : TCR - TVM : ₹ 300 <br>
+      
+                
+                </span>
+
+                <label for="start">Departure:</label>
+                <br><br>
+                <select #start name="start" id="start" class="w-100" style="text-transform: capitalize;">
+
+                    <option value="Thrissur">Thrissur</option>
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Kollam">Kollam</option>
+                    <option value="Trivandrum">Trivandrum</option>
+                </select><br><br>
+
+                <label for="end">Destination:</label>
+                <br><br>
+                <select #end name="end" id="end" class="w-100" style="text-transform: capitalize;">
+                    <!-- <option value="TCR">Thrissur</option> -->
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Kollam">Kollam</option>
+                    <option value="Trivandrum">Trivandrum</option>
+                </select><br>
+                <br>
+
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button (click)="confirm(name.value,phone.value,start.value,end.value)" class="btn btn-success"
+                    data-bs-dismiss="modal" style="text-transform: capitalize;">confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="ticketdata!=0 , else elseblock" style="margin: auto;">
+
+    <h1 class="w-100 text-center text-light">Ticket Details</h1>
+
+    <table class="   border border-2 p-3  text-center bg-light text-dark"
+        style="margin: auto; width:100%;text-transform: capitalize;">
+        <thead class="border border-2">
+            <tr>
+                <th class="border border-2 p-3 mb-3">Name</th>
+                <th class="border border-2 p-3 mb-3">Departure</th>
+                <th class="border border-2 p-3 mb-3">Destination</th>
+                <th class="border border-2 p-3 mb-3">Seat Number</th>
+                <th class="border border-2 p-3 mb-3">Ticket Price</th>
+                <th class="border border-2 p-3 mb-3">Cancel</th>
+            </tr>
+        </thead>
+
+        <tbody *ngFor="let i of ticketdata" class="border border-2 p-3 mb-3">
+            <tr>
+                <td class="border border-2 p-3 mb-3">{{i.name}}</td>
+                <td class="border border-2 p-3 mb-3">{{i.start}}</td>
+                <td class="border border-2 p-3 mb-3">{{i.end}}</td>
+                <td class="border border-2 p-3 mb-3">{{i.seats}}</td>
+                <td class="border border-2 p-3 mb-3">{{i.ticketprice}} x {{i.seats.length}} =
+                    {{i.ticketprice*i.seats.length}} /-</td>
+                <td class="border border-2 p-3 mb-3"><button class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1"><i class="fa-regular fa-trash-can"></i></button></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Phone Number and Name to confirm</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Name" #username style="text-transform: capitalize;"> <br>
+
+                    <input type="number" placeholder="Phone number" #phonenum style="text-transform: capitalize;">
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        (click)="cancel(phonenum.value,username.value)">Cancel ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #elseblock> <h1 class=" container w-75 mt-5  text-center text-light"> No Tickets Booked</h1> </ng-template>
